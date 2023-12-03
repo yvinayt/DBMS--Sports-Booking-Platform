@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cancel Booking</title>
+</head>
+<body>
+  <h2>Cancel Booking</h2>
+  <p>Are you sure you want to cancel this booking?</p>
+  <form method="post" action="{{ url_for('cancel_booking', booking_id=booking_id) }}">
+    <button type="submit" name="submit" value="Yes" style="margin-right: 10px;">Yes</button>
+    <button type="submit" name="submit" value="No">No</button>
+  </form>
+</body>
+</html>

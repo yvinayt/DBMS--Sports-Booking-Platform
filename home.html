@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+</head>
+<body>
+    <h1>SPORTS MANAGEMENT SYSTEM</h1>
+    <p>This is the home page of our web application.</p>
+    <ul>
+        <li><a href="/login">Login</a></li>
+        <li><a href="/signup">Signup</a></li>
+        {% if logged_in %}
+            <li><a href="/display">Display</a></li>
+            <li><a href="/bookings">Bookings</a></li>
+        {% endif %}
+    </ul>
+</body>
+</html>
